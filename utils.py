@@ -1,4 +1,4 @@
-from timeit import default_timer as default_timer
+from timeit import default_timer as timer
 
 def timefunc(func):
     def inner(*args, **kwargs):
