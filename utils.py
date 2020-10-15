@@ -1,0 +1,11 @@
+from timeit import default_timer as default_timer
+
+def timefunc(func):
+    def inner(*args, **kwargs):
+        start = timer()
+        results = func(*args, **kwargs)
+        end = timer()
+        message = f'{func.__name__} took {end - start} seconds'
+        print(message)
+        return results
+    return inner
