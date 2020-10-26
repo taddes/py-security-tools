@@ -31,16 +31,19 @@ class Scanner:
         return result == 0
 
     def write(self, filepath):
-        pass
+        openports = map(str, self.open_ports)
+        with open(filepath, 'w') as file:
+            file.write('/n'.join(openports))
 
-    
+
 @timefunc
 def main():
-    ip = '127.0.0.1'
+    ip = '192.168.1.1'
     scanner = Scanner(ip)
     print(repr(scanner))
     scanner.scan(1, 1000)
     print(scanner.open_ports)
+    scanner.write('./open_ports')
 
 
 if __name__ == '__main__':
