@@ -11,6 +11,7 @@ class Grabber:
     def read(self, length=1024):
         # Read. Argument is buffer size in bytes to recieve
         # Returns the data as a bytes object
+        # Used to receive data from TCP or UDP sockets
         return self.socket.recv(length)
 
     def close(self):
