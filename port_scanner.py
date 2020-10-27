@@ -38,7 +38,7 @@ class Scanner:
 
 @timefunc
 def main():
-    ip = '192.168.1.1'
+    ip = '192.168.1.4'
     scanner = Scanner(ip)
     print(repr(scanner))
     scanner.scan(1, 1000)
