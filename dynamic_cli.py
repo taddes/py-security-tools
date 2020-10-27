@@ -25,8 +25,7 @@ def main():
 
     if not success:
         print(f'Had some issues pinging {answers["ip"]}')
-    print(success)
-    return success
+    return None
 
 
 
