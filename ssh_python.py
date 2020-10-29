@@ -10,7 +10,7 @@ def main():
         # Paramiko doesn't auto add if host not known
         # Will add to known hosts
         client.set_missing_host_key_policy(AutoAddPolicy())
-        client.connect('192.168.1.15', username='admin', password='xxxxx')
+        client.connect('192.168.1.x', username='', password='')
 
         # File system
         stdin, stdout, stderr = client.exec_command('ls -l')
