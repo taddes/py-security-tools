@@ -9,6 +9,8 @@ verify_ssl = true
 pyinquirer = "*"
 requests = "*"
 paramiko = "*"
+scapy = "*"
+netifaces = "*"
 
 [requires]
 python_version = "3.7"
